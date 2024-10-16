@@ -1,0 +1,14 @@
+h1, h2 {
+    color: #a83838;
+    font-size: 3em;
+}
+.styleYellow {
+    color: yellow;
+}
+#opmaak {
+    color: orange;
+}
+section>h1 {
+    color: #bd9a59;
+    font-size: 2em;
+}
