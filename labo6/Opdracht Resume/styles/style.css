@@ -4,14 +4,15 @@ body {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 6em;
+}
+h1, h2 {
+    font-weight: normal;
 }
 
 h2 {
-    font-size:40px;
+    font-size:2.5em;
 }
-
-
 header h1, header h2 {
     color: #EDF2F4;
 }
