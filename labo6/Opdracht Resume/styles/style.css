@@ -1,5 +1,6 @@
 body {
     font-family: 'Helvetica', sans-serif;
+    margin-top: 0px;
 }
 
 h1 {
@@ -9,6 +10,7 @@ h1 {
 h2 {
     font-size:40px;
 }
+
 
 header h1, header h2 {
     color: #EDF2F4;
