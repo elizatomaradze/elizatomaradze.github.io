@@ -1,0 +1,7 @@
+
+header h1 { /*0002*/
+    color:gray;
+}
+h1 { /*0001*/
+    color: blue;
+}

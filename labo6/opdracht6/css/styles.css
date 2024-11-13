@@ -1,0 +1,20 @@
+ul.checklist li {
+    font-size: 18px;
+    margin: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+ul.checklist li.checked::before {
+    content: url(../img/afbeelding_2024-11-13_153425545.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ul.checklist li::before {
+    content: url(../img/afbeelding_2024-11-13_153242334.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
