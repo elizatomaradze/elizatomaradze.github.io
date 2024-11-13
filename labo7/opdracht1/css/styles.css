@@ -1,0 +1,37 @@
+body {
+    font-family: Verdana sans-serif;
+    font-size: 0.8em;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body>section>header {
+    height: 200px;
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+}
+body>section>header>h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 10px;
+}
+nav {
+    margin-top: 0;
+    background-color: #434343;
+}
+nav>a {
+    padding-left: 10px;
+    color: #51e87e;
+    text-decoration: none;
+    }
+
+article {
+    margin: 5px;
+    padding: 5px;
+    background-color: #ececec;
+}
+section > article > header > h1 {
+    font-size: 22px;
+    text-decoration: underline;
+}
