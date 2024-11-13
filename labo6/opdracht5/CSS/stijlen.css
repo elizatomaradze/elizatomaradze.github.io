@@ -1,6 +1,13 @@
-a{
-    padding: 1em;
+.icon-link {
+    padding-left: 20px; /* Add space for the icon */
+    background-image: url('labo6/opdracht5/afbeeldingen/Schermafbeelding_20221030_074613.png'); /* Replace 'icon.png' with your icon file path */
+    background-size: 16px 16px; /* Adjust icon size */
     background-repeat: no-repeat;
     background-position: left center;
-    background-image: url("../afbeeldingen/4999412-mail-icon-envelop-teken-e-mail-symbool-gratis-vector.jpg");
+    text-decoration: none;
+    color: blue;
+}
+
+.icon-link:hover {
+    text-decoration: underline;
 }
