@@ -7,7 +7,7 @@
     padding:50px;
     background-color: white;
 }
-.block {
+main>div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /*25% 50% 25% */
     grid-template-rows: 1fr 1fr 1fr; /* rij 2is 3x zo groot als rij 1 en 3. gelijk maken = auto auto auto*/
