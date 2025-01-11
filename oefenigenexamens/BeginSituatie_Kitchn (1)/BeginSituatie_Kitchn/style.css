@@ -1,6 +1,191 @@
 /** Volgende CSS gaan we ze geven **/
+body {
+    font-family: Helvetica, sans-serif;
+
+}
+
+header img {
+    height: 50px;
+    display:inline-block;
+    margin: 0 auto;
+}
+#lijn {
+    border-bottom:#ebe8e8 solid 1px;
+    width: 100%;
+}
+header {
+    margin: 0 auto;
+    width: 600px;
+
+    @media (min-width: 770px) {
+        width: 750px;
+    }
+
+    @media (min-width:1000px) {
+        width: 980px;
+    }
+}
+nav >ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+li > a {
+    padding: 10px 20px; /*1e keer px staat voor top en bottom, 2e px staat voor left en right!!!!!!!*/
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5b4746;
+    height: 13px;
+    display: flex; /* Zorgt ervoor dat tekst volledig gecentreerd wordt */
+    align-items: center; /* Centreert tekst verticaal */
+    justify-content: center; /* Centreert tekst horizontaal */
+    white-space: nowrap; /*zorgt ervoor dat woorden NAAST elkaar staan en niet onder elkaar*/
+
+}
+.navbar a:hover {
+    text-decoration:underline 2px solid #fff100;
+}
+
+.navbar li:not(:last-child) {
+    border-right: 1px solid #ebe8e8; /*grijze lijn behalve laatste item*/
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /*gebruikt om 7 dingen naast elkaar te zetten */
+    padding:10px;
+    margin: 0;
+}
+@media (max-width: 999px) {
+       .navbar-container
+       {
+        max-width: 750px; /*breder bij 770px - 999px*/
+       }
+    .grid-recipes {
+        width: 980px;
+    }
+    .recommended {
+        width: 980px;
+    }
+    }
+
+@media (max-width: 769px) {
+       .navbar-container{
+           max-width: 600px;/*kleinere breedtte bij 600-769px*/
+       }
+    .grid-recipes {
+        width: 750px;
+    }
+    .recommended {
+        width: 750px;
+    }
+    }
+
+.navbar-container {
+    max-width: 980px; /*werkt met max-width, is veel meer accurate*/
+    margin: 0 auto; /*Door deze 2 staat alles in het midden gecentreerd*/
+    padding: 15px 20px;
+
+}
+.main-header { /*POSITIE VAN IMG, BEREID VOOR OM TEXT EROVER TE ZETTEN*/
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.head-cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /*veritcaal centreren van text*/
+    justify-content: center; /*horizontaal centreren van text*/
+}
+@media (min-width: 800px) {
+    .title {
+        font-size: 5em;
+    }
+}
+.imghead {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    color: white;
+    height: 40px;
+    text-shadow: 2px 2px #8D99AE;
+
+}
+.recipes {
+    margin-top: 50px;
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .respimg {
     width: 100%;
     height: auto;
+    margin-right: 1.5em;
+    padding-top: 1em;
+
+}
+.grid-recipes {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding:5px;
+;
+
+
+
+}
+#titl{
+    border-bottom:solid black 3px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.recipe-item {
+    margin-right: 1.5em;
+    padding-top: 1em;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+
+}
+.kicker {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 1px; /*specing tussen letters*/
+    color: #ff4d56;
+}
+h2 > a {
+    text-decoration: none;
+    color: black;
+}
+.tekstrecipe {
+    color: #666;
+    line-height: 2;
     display: block;
+}
+.auteur {
+    padding-right: 10px;
+    border-right: 1px solid #ebe8e8;
+    font-style: italic;
+    display: inline-block;
+}
+.date {
+    color: #666;
+    padding-left: 10px;
+}
+
+.recommended {
+    margin-top: 50px;
+    justify-content: center;
+    width: 600px;
 }

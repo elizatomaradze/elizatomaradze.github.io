@@ -1,73 +1,85 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-
+    <meta charset="UTF-8">
+    <title>Kitchn</title>
+    <link rel="stylesheet" href="bootstrap-grid.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div>
-    <image href="c:\logo.png" />
-</div>
 
-<div>
-    <span>Recipes</span>
-    <span>Meal Planning</span>
-    <span>Learn</span>
-    <span>Shop</span>
-    <span>People</span>
-    <span>Holiday</span>
-    <span>More</span>
+<div id="lijn">
+    <header>
+        <img src="images/logo.png" alt="logo">
+    </header>
 </div>
+<nav class="navbar-container">
+    <ul class="navbar">
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Meal Planning</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">People</a></li>
+        <li><a href="#">Holiday</a></li>
+        <li><a href="#">More</a></li>
+    </ul>
+</nav>
 
-<div>
-    <div>
-        Better food, better mood
+<main>
+    <div class="main-header">
+        <div class="head-cont">
+            <img src="images/headerimage.jpg" alt="headerimg" class="imghead">
+            <h1 class="title"> Better food, better mood </h1>
+        </div>
     </div>
 
-    <div>
-        <div>
-            Recipes
+    <div class="recipes">
+        <div id="titl">
+          <h1> Recipes </h1>
         </div>
-        <div>
-            <div>
-                Kitchn Love Letters
-                This One-Pan Mushroom and Steak Recipe Is Calling Your Name
-                Raise your hand if you're making this for dinner tonight!
-                by Elizabeth Licata May 3, 2019
+
+        <div class="grid-recipes">
+            <div class="recipe-item">
+               <span class="kicker"> Kitchn Love Letters </span>
+               <h2> <a href="#"> This One-Pan Mushroom and Steak Recipe Is Calling Your Name </a> </h2>
+                <span class="tekstrecipe"> Raise your hand if you're making this for dinner tonight! </span>
+                <div class="auteur">by Elizabeth Licata </div> <span class="date"> May 3, 2019 </span>
             </div>
 
             <div>
-                <image href="c:\bbq.jpeg" class="respimg"/>
+                <img class="respimg" src="images/recipes/bbq.jpeg" alt="bbq">
+            </div>
+
+            <div class="recipe-item">
+                <span class="kicker">  Next week's meal plan </span>
+                <h2> <a href="#">Recipe: Walnut & Black Bean Veggie Burgers </a> </h2>
+                <span class="tekstrecipe">  The ingredients and technique that ensure success every time. </span>
+                <div class="auteur">by Kelly Foster </div> <span class="date"> May 1, 2019 </span>
             </div>
 
             <div>
-                Next week's meal plan
-                Recipe: Walnut & Black Bean Veggie Burgers
-                The ingredients and technique that ensure success every time.
-                by Kelly Foster May 1, 2019
+                <img class="respimg" src="images/recipes/burger.jpeg" alt="burger">
             </div>
 
-            <div>
-                <image href="c:\burger.jpeg" class="respimg"/>
-            </div>
-
-            <div>
-                Kitchn Love Letters
-                Next Week’s Meal Plan: A Week of Mediterranean Diet Dinners
-                Welcome to Next Week’s Meal Plan! I want to help you find inspiration and ease some of the pain points
+            <div class="recipe-item">
+                <span class="kicker"> Kitchn Love Letters </span>
+                <h2> <a href="#"> Next Week’s Meal Plan: A Week of Mediterranean Diet Dinners </a> </h2>
+                <span class="tekstrecipe"> Welcome to Next Week’s Meal Plan! I want to help you find inspiration and ease some of the pain points
                 that come with getting dinner on the table night after night, whether you’re cooking for one or a family
-                of eight.
-                by Sheela Prakash April 24, 2019
+                    of eight. </span>
+                <div class="auteur"> by Sheela Prakash </div>  <span class="date">April 24, 2019 </span>
             </div>
 
             <div>
-                <image href="c:\mediterranean.png" class="respimg"/>
+                <img class="respimg" src="images/recipes/mediterranean.png" alt="medit">
             </div>
         </div>
 
     </div>
 
-    <div>
+    <div class="recommended">
         <div>
             Recommended for you
         </div>
@@ -103,7 +115,7 @@
         </div>
     </div>
 
-</div>
+</main>
 
 <div>
     <div id="left">
