@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid .block{
+    margin:50px;
+    padding:50px;
+}
+
+.verplaatsen .blok {
+    margin:50px;
+    padding:50px;
+}
+
+.verplaatsen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.blok.block1{
+    grid-area: 3/1/4/2;
+}
+
+.blok.block7{
+    grid-area: 1/1/2/2;
+}

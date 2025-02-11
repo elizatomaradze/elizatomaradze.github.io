@@ -1,0 +1,254 @@
+/* Algemene stijlen */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    width: 51.4%;
+}
+
+.recommended_h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    border-bottom: 2px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Header */
+.lijn {
+    border-bottom: 1px solid #ebe8e8;
+}
+
+.header-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    height: 60px;
+    max-width: 980px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Navigatie */
+nav {
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 980px;
+    width: 100%;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation li {
+    display: block;
+    color: #5b4746;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    position: relative;
+    border-right: 1px solid #dcdcdc;
+}
+
+.navigation li:last-child {
+    border-right: none;
+}
+
+.navigation li:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #fff100; 
+}
+
+main {
+    border-top: 1px solid #ebe8e8;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    align-content: center;
+    text-shadow: #8D99AE 2px 0 0;
+
+    background-image: url("../images/headerimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.respimg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Recipes sectie */
+.recipes {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column; /* Inhoud blijft verticaal gestapeld */
+    align-items: center;
+}
+
+/* Receptencontainer */
+.recipes-container {
+    display: grid;
+    gap: 15px; /* Tussenruimte van 15px */
+    width: 100%;
+    max-width: 600px; /* Standaard breedte */
+}
+
+
+/* Grid layout voor recepten */
+.recipe-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Afbeelding en content naast elkaar */
+    gap: 15px;
+}
+
+
+.recipe-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Tekstuitlijning links */
+}
+
+.kicker {
+    color: red;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-space: 1px;
+}
+
+.itembody {
+    color: #666;
+    line-height: 2;
+}
+
+.auteur{
+    padding-right: 10px;
+    font-style: italic;
+}
+
+.span{
+    padding-left: 10px;
+    color: #666;
+}
+
+.arttitle {
+    color: black;
+    text-decoration: none;
+}
+
+/*recommended*/
+.recommended {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ebe8e8;
+    padding: 20px;
+    width: 100%;
+    line-height: 2em;
+}
+
+.left-block, .right-block {
+    width: 50%;
+}
+
+.left-block {
+    text-align: right;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+.right-block {
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+}
+
+
+/* Responsieve stijlen */
+@media (min-width: 770px) {
+    .recommended {
+        max-width: 750px; /* Breedte bij viewport ≥ 770px */
+    }
+}
+
+@media (min-width: 1000px) {
+    .recommended {
+        max-width: 980px; /* Breedte bij viewport ≥ 1000px */
+    }
+}
+
+
+@media (min-width: 770px) {
+    .recipes-container {
+        max-width: 750px; /* Breder vanaf 770px */
+    }
+}
+
+@media (min-width: 1000px) {
+    .recipes-container {
+        max-width: 980px; /* Breder vanaf 1000px */
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-container, nav {
+        max-width: 750px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .title {
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 770px) {
+    .header-container, nav {
+        max-width: 600px;
+    }
+}
+
+
